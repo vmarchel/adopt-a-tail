@@ -8,9 +8,9 @@ html {
   right: 10px;
   background-color: rgba(47, 47, 47, 0.3);
   color: whitesmoke;
-  padding: 6px;
+  padding: 6px 8px;
   border-radius: 15%;
-  font-size: 18px;
+  font-size: 32px;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   cursor: pointer;
@@ -173,11 +173,12 @@ p {
 /* ___________________________________about */
 
 .about-section {
+    /* border: 1px solid red; */
     color: #2F2F2F;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 80px;
-    /* border: 1px solid red; */
+    max-width: 90%;
+    margin: 80px auto 0;
 }
 
 .left-side img {
@@ -186,22 +187,24 @@ p {
     border-radius: 30px;
     border: 0.5px solid #2F2F2F;
     box-shadow: 0 4px 12px #2F2F2F;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.4), 
-                                    rgba(0, 0, 0, 0.4));
+    display: block;
 }
 
 .left-side h3 {
+    /* border: 1px solid red; */
     font-family: 'Pacifico', sans-serif;
     color: black;
     font-size: 42px;
-    margin: 0 50px 0;
+    margin: 0 20px 0;
     padding: 0;
+    justify-self: center;
 }
 
 .right-side p {
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
+    /* width: 90%; */
 }
 
 .statistic-box {
@@ -213,7 +216,8 @@ p {
     border-radius: 30px;
     padding: 15px 30px;
     font-weight: 600;
-    width: 80%;
+    /* width: 80%; */
+    align-self: flex-end;
 }
 
 .statistic-box .number {
@@ -262,8 +266,8 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: 55% 40%;
-    border-radius: 12px;
-    display: block;
+    border-radius: 30px;
+    /* display: block; */
     box-shadow: 0 4px 12px #2F2F2F;
 }
 
@@ -275,7 +279,7 @@ p {
     font-size: 16px;
     background: rgba(0, 0, 0, 0.5);
     padding: 6px 10px;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 .btn-contact-us {
@@ -318,6 +322,7 @@ section h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    font-size: 18px;
 }
 
 .story-box {
@@ -342,7 +347,58 @@ section h1 {
 
 .stories-text {
     margin: 0 10px;
-    /* text-align: justify; */
 }
 
+
+/* ___________________________________faq */
+
+.faq-section {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.faq-section h1 {
+    margin-top: 80px;
+}
+
+details {
+  border: 1px solid #2F2F2F;
+  box-shadow: 0 4px 12px #2F2F2F;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: none;
+  font-size: 20px;
+  transition: background-color 0.8s ease;
+}
+
+details[open] {
+  background-color: #BFBFBF;
+}
+
+details p{
+    margin-top: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding-right: 25px;
+  list-style: none;
+}
+
+summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  transition: transform 0.8s ease;
+}
+
+details[open] summary::after {
+  content: '–';
+}
+
+
 /* ___________________________________footer */
+
