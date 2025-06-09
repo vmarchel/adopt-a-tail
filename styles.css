@@ -8,7 +8,7 @@ html {
   right: 10px;
   background-color: rgba(47, 47, 47, 0.3);
   color: whitesmoke;
-  padding: 6px 8px;
+  padding: 6px 6px;
   border-radius: 15%;
   font-size: 32px;
   text-decoration: none;
@@ -399,6 +399,39 @@ details[open] summary::after {
   content: '–';
 }
 
+/* ___________________________________bottom-ribbon */
+
+.bottom-ribbon {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+    /* border: 1px solid #2F2F2F; */
+    border-radius: 30px;
+
+    padding: 30px 60px;
+    background-color: #c4c4c460;
+    overflow: hidden;
+}
+
+.subscribe h3{
+    margin: 0;
+}
+
+.subscribe p {
+    margin: 10px 0;
+}
 
 /* ___________________________________footer */
+
+.footer-section {
+    margin-top: 80px;
+    font-size: 15px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+
+
+}
 
