@@ -4,7 +4,7 @@ html {
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 10px;
   background-color: rgba(47, 47, 47, 0.3);
   color: whitesmoke;
@@ -33,6 +33,8 @@ html {
 
 header {
     /* border: 1px solid red; */
+    width: 1802px;
+    height: 70px;
     display: flex;
     margin: 15px 0px;
 }
@@ -113,6 +115,7 @@ p {
 /* ___________________________________hero-section */
 
 .hero-section {
+    /* border: 1px solid red; */
     background: linear-gradient(rgba(0, 0, 0, 0.2), 
                                 rgba(0, 0, 0, 0.2)), 
                                 url('images/dog10.jpg');
@@ -122,6 +125,7 @@ p {
     background-position:center center;
     position: relative;
     border-radius: 30px;
+    width: 1805px;
     height: 600px;
 }
 
@@ -173,24 +177,19 @@ p {
 /* ___________________________________about */
 
 .about-section {
-    /* border: 1px solid red; */
-    color: #2F2F2F;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 90%;
     margin: 80px auto 0;
 }
 
-.left-side img {
-    margin-top: 30px;
-    width: 650px;
-    border-radius: 30px;
-    border: 0.5px solid #2F2F2F;
-    box-shadow: 0 4px 12px #2F2F2F;
-    display: block;
+.about-content {
+    /* border: 1px solid red; */
+    width: 1805px;
+    height: 568px;
+    color: #2F2F2F;
+    display: flex;
+    gap: 50px;
 }
 
-.left-side h3 {
+.about-section h3 {
     /* border: 1px solid red; */
     font-family: 'Pacifico', sans-serif;
     color: black;
@@ -198,13 +197,31 @@ p {
     margin: 0 20px 0;
     padding: 0;
     justify-self: center;
+    align-content: end;
+}
+
+.left-side img {
+    margin-top: 30px;
+    width: 800px;
+    border-radius: 30px;
+    border: 0.5px solid #2F2F2F;
+    box-shadow: 0 4px 12px #2F2F2F;
+    display: block;
+}
+
+.right-side {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .right-side p {
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
-    /* width: 90%; */
+    /* width: 70%; */
 }
 
 .statistic-box {
@@ -216,8 +233,7 @@ p {
     border-radius: 30px;
     padding: 15px 30px;
     font-weight: 600;
-    /* width: 80%; */
-    align-self: flex-end;
+    width: 60%;
 }
 
 .statistic-box .number {
@@ -236,7 +252,8 @@ p {
     gap: 60px;
     padding: 30px 60px;
     background-color: #c4c4c4be;
-    height: auto;
+    width: 1685px;
+    height: 720;
 }
 
 .title {
@@ -256,19 +273,31 @@ p {
 .img-box {
     /* border: 3px solid black; */
     position: relative;
-    width: 100%;
+    width: 300px;
     height: 300px;
 }
 
 .img-box img {
     /* border: 1px solid white; */
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;;
     object-fit: cover;
-    object-position: 55% 40%;
+    object-position: 45% 40%;
     border-radius: 30px;
-    /* display: block; */
     box-shadow: 0 4px 12px #2F2F2F;
+}
+
+.img-box:nth-of-type(2) img {
+    object-position: 55% 35%;
+}
+
+.img-box:nth-of-type(4) img {
+    object-position: 90% 40%;
+}
+
+.img-box:nth-of-type(5) img {
+    object-position: 56% 0%;
+
 }
 
 .img-box span {
@@ -307,6 +336,8 @@ p {
 
 .adoption-stories-section {
     margin-top: 80px;
+    width: 1805px;
+    height: 1506px;
 }
 
 section h1 {
@@ -353,7 +384,8 @@ section h1 {
 /* ___________________________________faq */
 
 .faq-section {
-  max-width: 1000px;
+  width: 1000px;
+  height: 474px;
   margin: 40px auto;
 }
 
@@ -369,7 +401,10 @@ details {
   padding: 10px 15px;
   background-color: none;
   font-size: 20px;
-  transition: background-color 0.8s ease;
+  transition: 0.8s ease;
+  background-color: #838282;
+  box-shadow: 0 4px 12px #2F2F2F;
+
 }
 
 details[open] {
@@ -399,39 +434,140 @@ details[open] summary::after {
   content: '–';
 }
 
-/* ___________________________________bottom-ribbon */
+/* ___________________________________footer-section */
 
-.bottom-ribbon {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-
-    /* border: 1px solid #2F2F2F; */
-    border-radius: 30px;
-
-    padding: 30px 60px;
-    background-color: #c4c4c460;
-    overflow: hidden;
+.footer-section{
+    margin-top: 80px;
+    width: 1725px;
+    height: 150px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10px;
+  background-color: #2F2F2F;
+  color: whitesmoke;
+  padding: 30px 40px;
+  border-radius: 30px 30px 0 0;
 }
 
-.subscribe h3{
-    margin: 0;
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left p {
+    margin: 6px 0;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-left li:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* ___________________________________subscribe */
+
+input {
+    padding: 6px 8px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    font-size: 16px;
+    width: auto;
+}
+
+button {
+    padding: 6px 8px;
+    background-color: whitesmoke;
+    color: #2F2F2F;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: #2F2F2F;
+    transition: 0.3s;
+}
+
+button:active {
+    color: #2F2F2F;
+    background-color: whitesmoke;
 }
 
 .subscribe p {
-    margin: 10px 0;
+    margin: 8px 0px;
+  font-size: 14px;
+  color: #999;
 }
 
-/* ___________________________________footer */
+/* ___________________________________support */
 
-.footer-section {
-    margin-top: 80px;
-    font-size: 15px;
+.support h3 a {
+  cursor: pointer;
+  color: #999;
+}
+
+.support h3 a:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+/* ___________________________________privacy */
+
+.footer-privacy {
+    border-top: 1px solid #444;
     display: flex;
-    align-items: start;
-    justify-content: space-around;
-
-
+  justify-content: space-between;
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+  grid-column: 1 / -1;
 }
+
+.footer-privacy a {
+  color: #bbb;
+  margin: 0 6px;
+}
+
+.footer-privacy a:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+
+
+
+/* ___________________________________media queries */
+
 
