@@ -1,0 +1,13 @@
+
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #2F2F2F;
+    margin-left: auto;
+    padding: 10px;
+}

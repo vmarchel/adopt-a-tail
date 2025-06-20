@@ -1,0 +1,59 @@
+header {
+    /* border: 1px solid red; */
+    max-width: 1500px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin: 15px 0px;
+}
+
+.container-logo {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    height: 70px;
+}
+
+#logo-txt {
+    font-family: 'Baloo 2', cursive;
+    font-size: 30px;
+}
+
+.container-links {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: end;
+    margin: auto;
+    gap: 60px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    transition:  0.3s ease;
+    font-weight: 700;
+}
+
+.links:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.links:active {
+    transform: scale(1.0);
+}
+
+#facebook-logo,
+#insta-logo,
+#tik-tok-logo {
+    height: 25px;
+}
+
+.container-btn {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}

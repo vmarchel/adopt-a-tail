@@ -1,0 +1,25 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+
+.main-container {
+    padding: 0 50px;
+    font-family: 'Happy Monkey', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+    background-image: url('/images/background/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    color: black;
+    max-width: 1500px;
+    margin: auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

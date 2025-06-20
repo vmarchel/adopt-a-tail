@@ -1,0 +1,86 @@
+/* ___________________________________back-to-top button */
+
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 6px;
+  border-radius: 15%;
+  font-size: 42px;
+  font-weight: 700;
+  background-color: #2F2F2F;
+  color: #F0D0DB !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ___________________________________donate & cta buttons */
+
+.donate-btn {
+    border: 1px solid;
+    font-family: 'Happy Monkey', sans-serif;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: transform 0.6s ease;
+}
+
+.cta-btn,
+.btn-contact-us {
+    border: 2px solid;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color:#2F2F2F;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.6s ease;
+}
+
+
+.donate-btn:hover,
+.cta-btn:hover,
+.btn-contact-us:hover {
+    background-color: #F0D0DB;
+    color:#2F2F2F;
+    transition: 0.6s;
+    transform: scale(1.2);
+}
+
+.donate-btn:active,
+.cta-btn:active,
+.btn-contact-us:active  {
+    background-color: #2F2F2F;
+    color: whitesmoke;
+    transform: scale(1.0);
+}
+
+
+/* ___________________________________subscribe button */
+
+.subscribe button {
+    padding: 6px 8px;
+    background-color: whitesmoke;
+    color: #2F2F2F;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    color: #2F2F2F;
+    background-color: #F0D0DB;
+    transition: 0.6s;
+}
+
+.subscribe button:active {
+    background-color: #F0D0DB;
+    color: #2F2F2F;
+    transform: scale(1.0);
+    font-size: 18px;
+    border-color: #F0D0DB;
+}

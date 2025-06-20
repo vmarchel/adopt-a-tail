@@ -1,0 +1,56 @@
+
+.adoption-stories-section {
+    /* border: 1px solid red; */
+    margin-top: 80px;
+    max-width: 1500px;
+    width: 100%;
+}
+
+section h1 {
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 42px;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+}
+
+.stories-container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.story-box {
+    /* border: 2px solid #F0D0DB; */
+    border-radius: 30px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 12px #2F2F2F; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #c4c4c4be;
+    /* transition: transform 0.6s ease; */
+}
+
+/* .story-box:hover {
+    transform: scale(1.1);
+} */
+
+.story-box img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    /* box-shadow: 0 4px 12px #2F2F2F; */
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.stories-text {
+    margin: 0 10px;
+}
