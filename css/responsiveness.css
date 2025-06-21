@@ -3,6 +3,10 @@
 
 @media (max-width: 1400px) {
 
+nav {
+  position: relative;
+}
+
 .burger-menu {
   display: block;
 }

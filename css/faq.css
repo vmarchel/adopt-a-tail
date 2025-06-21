@@ -15,16 +15,16 @@ details {
   padding: 25px 35px;
   background-color: none;
   font-size: 20px;
-  background-color: #DAD7D8;
+  background-color: #c4c4c4be;
   transition: transform 0.6s ease;
 }
 details:hover {
   transform: translateX(20px);
-  background-color: #DAD7D8;
+  background-color: #c4c4c4be;
 }
 
 details[open] {
-  background-color: #DAD7D8;
+  background-color: #c4c4c4be;
   border-color: #F0D0DB;
   color: #2F2F2F;
 }

@@ -23,14 +23,12 @@ section h1 {
     gap: 50px;
     font-size: 18px;
     line-height: 1.6;
-
 }
 
 .story-box {
     /* border: 2px solid #F0D0DB; */
     border-radius: 30px;
     overflow: hidden;
-    /* box-shadow: 0 4px 12px #2F2F2F; */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -46,7 +44,6 @@ section h1 {
     width: 300px;
     height: 100%;
     object-fit: cover;
-    /* box-shadow: 0 4px 12px #2F2F2F; */
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
